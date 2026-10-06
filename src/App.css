@@ -1,0 +1,290 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.counter-badge {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.movie-form {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.movie-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.genre-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.btn-add-genre {
+  padding: 0 12px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button, .btn-clear-all, .btn-submit {
+  padding: 8px 14px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-buttons button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.btn-clear-all {
+  background: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.btn-submit {
+  background: #007bff;
+  color: white;
+  width: 100%;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.movie-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+.movie-card.watched {
+  background: #eafaf1;
+  border-color: #a3e4d7;
+}
+
+.movie-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.movie-info p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rating-stars {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.movie-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-watched {
+  padding: 6px 12px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-watched.active {
+  background: #2ecc71;
+  color: white;
+  border-color: #2ecc71;
+}
+
+.btn-delete {
+  padding: 4px 8px;
+  background: transparent;
+  color: #e74c3c;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 30px;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.app-header h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn-toggle-form {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.btn-toggle-form:hover {
+  background-color: #27ae60;
+}
+
+.movie-form-modal {
+  margin-bottom: 25px;
+}
+
+.movie-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-header h3 {
+  margin: 0;
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.movie-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.genre-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.btn-remove-genre {
+  padding: 0 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 34px;
+}
+
+.btn-add-genre-field {
+  background: #eef2f7;
+  color: #007bff;
+  border: 1px dashed #007bff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-submit {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-cancel {
+  background: #ccc;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
